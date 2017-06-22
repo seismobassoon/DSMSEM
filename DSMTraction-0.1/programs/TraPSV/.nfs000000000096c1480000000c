@@ -1,0 +1,25 @@
+# This is the input file for SGTforPinv
+#
+#
+# 1.outputDir (should make this directory and log, RSGT, TSGT directory in it)
+/export/bacchus1/fuji/SGTCatalog/ak135/100-mini/
+# 2.psvmodel
+./ak135.psv.model
+# 3. modelname
+ak135
+# 4. tlen (preferred to set to 2^n*0.1 seconds)
+3.2768d3
+# 5. minQ radius (km) , maxQ radius, delta radius
+#3481.d0 6371.d0 20.d0
+6371.d0 6371.d0 20.d0 
+# 6. source radius (km)
+6271.d0
+# 7. minQ theta (degrees), maxQ theta, delta theta
+2.d-1 180.d0 2.d-1
+# 8. imin imax (omega index: tlen/imax is the shortest period)
+0 2048
+# 9. backpropagation (RSGT) calculation switch 
+#       (if 1 we calculate)
+1
+# don't forget to write 'end' 
+end

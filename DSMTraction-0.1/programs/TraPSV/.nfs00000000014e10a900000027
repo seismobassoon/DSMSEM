@@ -1,0 +1,23 @@
+# This is the input file for TraPSV/SH
+#
+#
+# 1.outputDir (should make this directory and log, Stress, Displacement directory in it)
+#/export/bacchus1/fuji/SGTCatalog/ak135/
+/home/sismo3/fuji/testTra/iasp91pure2/
+# 2.psvmodel
+./iasp91NoAttenuation.psv.model
+# 3. modelname
+iasp91pure
+# 4. depth-lat-lon-up/down file (up/down should be marked like +1/-1 in integer)
+coordinates.inf
+# 5. tlen (preferred to set to 2^n*0.1 seconds)
+#3.2768d3
+1.6384d3
+# 6. source depth (km) lat lon  (degrees)
+200.d0 0.d0 0.d0
+# 7. imin imax (omega index: tlen/imax is the shortest period)
+0 2048 
+# 8. itranslat(1 if you translate geodetic latitudes to geocentric latitudes)
+0
+# don't forget to write 'end' 
+end

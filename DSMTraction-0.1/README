@@ -1,0 +1,35 @@
+#1  go to programs and make three programs (TraFFT, TraPSV, TraSH)
+
+
+#2 programs will be made in the DSMTraction directory
+
+#3 necessary infos are *.psv.model, coordinates.inf, inputIASP.infTra
+
+#4 first you should run TraPSV/SH like
+
+TraPSV < infos/input.infTra
+TraSH < infos/input.infTra
+
+# as is also written in the sample inputIASP.infTra, you should manually
+# make your outputDir and "Stress", "Displacement", "log", and "ascii" inside
+
+you can monitor how the calculation is going timely when you have a look 
+at two files "list*" and "calLog" 
+
+Especially "list*" will tell you frequency index which is ready to use for FFT
+
+you can just modify "imax" in your info file for TraFFT
+
+then 
+
+just
+
+TraFFT < infos/input.infTra
+
+then you can see the green* in your ascii directory
+
+
+
+
+# known bugs:
+imax should be 4-digit number for TraPSV/SH (I don't know why for this moment)
